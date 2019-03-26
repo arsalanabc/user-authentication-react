@@ -12,7 +12,7 @@ class App extends Component {
             <div className="App">
               <h1> Single Page User Authentication Demo</h1>
                 <div className='menu-bar'>
-                  <p> <NavLink to={'/home'} > Home </NavLink></p>
+                  <p> <NavLink exact to={'/home'} > Home </NavLink></p>
                   <p> <NavLink to={'/signin'} > Sign In </NavLink></p>
                   <p> <NavLink to={'/signup'} > Sign Up </NavLink></p>
                 </div>
