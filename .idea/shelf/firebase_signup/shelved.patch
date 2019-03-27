@@ -1,0 +1,1134 @@
+Index: src/pages/signup.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from 'react'\n\nconst signup = () => {\n\n    return(\n        <div>\n            <form>\n                <h4> Please Sign Up</h4>\n                <label> First Name: </label>\n                <input type='text'/>\n                <br/>\n                <label> Last Name: </label>\n                <input type='text'/>\n                <br/>\n                <label> Email: </label>\n                <input type='email'/>\n                <br/>\n                <label> Password: </label>\n                <input type='password'/>\n                <br/>\n                <label> Confirm Password: </label>\n                <input type='password'/>\n\n\n            </form>\n        </div>\n    )\n}\n\nexport default signup
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/pages/signup.js	(date 1553687603000)
++++ src/pages/signup.js	(date 1553691316000)
+@@ -2,9 +2,13 @@
+ 
+ const signup = () => {
+ 
++    const callSignup = () => {
++        console.log('called this method')
++    }
++
+     return(
+         <div>
+-            <form>
++            <form onSubmit={callSignup}>
+                 <h4> Please Sign Up</h4>
+                 <label> First Name: </label>
+                 <input type='text'/>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"eb383c17-ce0d-4ffe-831c-27b37673ff13\" name=\"Default Changelist\" comment=\"\" />\n    <option name=\"EXCLUDED_CONVERTED_TO_IGNORED\" value=\"true\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FUSProjectUsageTrigger\">\n    <session id=\"-1232052030\">\n      <usages-collector id=\"statistics.lifecycle.project\">\n        <counts>\n          <entry key=\"project.open.time.0\" value=\"1\" />\n          <entry key=\"project.opened\" value=\"1\" />\n        </counts>\n      </usages-collector>\n      <usages-collector id=\"statistics.file.extensions.open\">\n        <counts>\n          <entry key=\"css\" value=\"1\" />\n          <entry key=\"gitignore\" value=\"1\" />\n          <entry key=\"js\" value=\"6\" />\n        </counts>\n      </usages-collector>\n      <usages-collector id=\"statistics.file.types.open\">\n        <counts>\n          <entry key=\"CSS\" value=\"1\" />\n          <entry key=\"JavaScript\" value=\"6\" />\n          <entry key=\"PLAIN_TEXT\" value=\"1\" />\n        </counts>\n      </usages-collector>\n      <usages-collector id=\"statistics.file.extensions.edit\">\n        <counts>\n          <entry key=\"css\" value=\"432\" />\n          <entry key=\"gitignore\" value=\"6\" />\n          <entry key=\"js\" value=\"1185\" />\n        </counts>\n      </usages-collector>\n      <usages-collector id=\"statistics.file.types.edit\">\n        <counts>\n          <entry key=\"CSS\" value=\"432\" />\n          <entry key=\"JavaScript\" value=\"1185\" />\n          <entry key=\"PLAIN_TEXT\" value=\"6\" />\n        </counts>\n      </usages-collector>\n      <usages-collector id=\"statistics.js.language.service.starts\">\n        <counts>\n          <entry key=\"ESLintLanguageService\" value=\"1\" />\n        </counts>\n      </usages-collector>\n    </session>\n  </component>\n  <component name=\"FileEditorManager\">\n    <leaf>\n      <file pinned=\"false\" current-in-tab=\"false\">\n        <entry file=\"file://$PROJECT_DIR$/src/App.js\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state relative-caret-position=\"197\">\n              <caret line=\"14\" column=\"33\" selection-start-line=\"14\" selection-start-column=\"33\" selection-end-line=\"14\" selection-end-column=\"33\" />\n              <folding>\n                <element signature=\"e#0#41#0\" expanded=\"true\" />\n              </folding>\n            </state>\n          </provider>\n        </entry>\n      </file>\n      <file pinned=\"false\" current-in-tab=\"false\">\n        <entry file=\"file://$PROJECT_DIR$/src/pages/signin.js\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state relative-caret-position=\"240\">\n              <caret line=\"16\" column=\"55\" lean-forward=\"true\" selection-start-line=\"16\" selection-start-column=\"16\" selection-end-line=\"16\" selection-end-column=\"55\" />\n            </state>\n          </provider>\n        </entry>\n      </file>\n      <file pinned=\"false\" current-in-tab=\"false\">\n        <entry file=\"file://$PROJECT_DIR$/src/pages/signup.js\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state relative-caret-position=\"45\">\n              <caret line=\"3\" selection-start-line=\"3\" selection-end-line=\"3\" />\n            </state>\n          </provider>\n        </entry>\n      </file>\n      <file pinned=\"false\" current-in-tab=\"false\">\n        <entry file=\"file://$PROJECT_DIR$/src/index.css\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state relative-caret-position=\"192\">\n              <caret line=\"18\" column=\"16\" selection-start-line=\"18\" selection-start-column=\"16\" selection-end-line=\"18\" selection-end-column=\"16\" />\n            </state>\n          </provider>\n        </entry>\n      </file>\n      <file pinned=\"false\" current-in-tab=\"false\">\n        <entry file=\"file://$PROJECT_DIR$/src/pages/home.js\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state relative-caret-position=\"225\">\n              <caret line=\"19\" column=\"19\" lean-forward=\"true\" selection-start-line=\"19\" selection-start-column=\"19\" selection-end-line=\"19\" selection-end-column=\"19\" />\n            </state>\n          </provider>\n        </entry>\n      </file>\n      <file pinned=\"false\" current-in-tab=\"true\">\n        <entry file=\"file://$PROJECT_DIR$/config/firebase-config.js\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state relative-caret-position=\"90\">\n              <caret line=\"6\" column=\"31\" selection-start-line=\"6\" selection-start-column=\"31\" selection-end-line=\"6\" selection-end-column=\"31\" />\n            </state>\n          </provider>\n        </entry>\n      </file>\n    </leaf>\n  </component>\n  <component name=\"FindInProjectRecents\">\n    <findStrings>\n      <find>a</find>\n    </findStrings>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"IdeDocumentHistory\">\n    <option name=\"CHANGED_PATHS\">\n      <list>\n        <option value=\"$PROJECT_DIR$/.gitignore\" />\n        <option value=\"$PROJECT_DIR$/src/pages/home.js\" />\n        <option value=\"$PROJECT_DIR$/src/pages/signin.js\" />\n        <option value=\"$PROJECT_DIR$/src/pages/signup.js\" />\n        <option value=\"$PROJECT_DIR$/src/App.js\" />\n        <option value=\"$PROJECT_DIR$/src/index.css\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"JsBuildToolGruntFileManager\" detection-done=\"true\" sorting=\"DEFINITION_ORDER\" />\n  <component name=\"JsBuildToolPackageJson\" detection-done=\"true\" sorting=\"DEFINITION_ORDER\" />\n  <component name=\"JsGulpfileManager\">\n    <detection-done>true</detection-done>\n    <sorting>DEFINITION_ORDER</sorting>\n  </component>\n  <component name=\"NodeModulesDirectoryManager\">\n    <handled-path value=\"$PROJECT_DIR$/node_modules\" />\n  </component>\n  <component name=\"NodePackageJsonFileManager\">\n    <packageJsonPaths>\n      <path value=\"$PROJECT_DIR$/package.json\" />\n    </packageJsonPaths>\n  </component>\n  <component name=\"ProjectFrameBounds\">\n    <option name=\"x\" value=\"840\" />\n    <option name=\"y\" value=\"23\" />\n    <option name=\"width\" value=\"840\" />\n    <option name=\"height\" value=\"963\" />\n  </component>\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectView\">\n    <navigator proportions=\"\" version=\"1\">\n      <foldersAlwaysOnTop value=\"true\" />\n    </navigator>\n    <panes>\n      <pane id=\"ProjectPane\">\n        <subPane>\n          <expand>\n            <path>\n              <item name=\"user_authentication_react\" type=\"b2602c69:ProjectViewProjectNode\" />\n              <item name=\"user_authentication_react\" type=\"462c0819:PsiDirectoryNode\" />\n            </path>\n            <path>\n              <item name=\"user_authentication_react\" type=\"b2602c69:ProjectViewProjectNode\" />\n              <item name=\"user_authentication_react\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"config\" type=\"462c0819:PsiDirectoryNode\" />\n            </path>\n            <path>\n              <item name=\"user_authentication_react\" type=\"b2602c69:ProjectViewProjectNode\" />\n              <item name=\"user_authentication_react\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"src\" type=\"462c0819:PsiDirectoryNode\" />\n            </path>\n            <path>\n              <item name=\"user_authentication_react\" type=\"b2602c69:ProjectViewProjectNode\" />\n              <item name=\"user_authentication_react\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"src\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"pages\" type=\"462c0819:PsiDirectoryNode\" />\n            </path>\n            <path>\n              <item name=\"user_authentication_react\" type=\"b2602c69:ProjectViewProjectNode\" />\n              <item name=\"External Libraries\" type=\"cb654da1:ExternalLibrariesNode\" />\n            </path>\n            <path>\n              <item name=\"user_authentication_react\" type=\"b2602c69:ProjectViewProjectNode\" />\n              <item name=\"Scratches and Consoles\" type=\"1a2a3e82:ScratchProjectViewPane$MyProjectNode\" />\n            </path>\n          </expand>\n          <select />\n        </subPane>\n      </pane>\n      <pane id=\"AndroidView\" />\n      <pane id=\"PackagesPane\" />\n      <pane id=\"Scope\" />\n    </panes>\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"aspect.path.notification.shown\" value=\"true\" />\n    <property name=\"com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp\" value=\"1553687455038\" />\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\n    <property name=\"node.js.detected.package.eslint\" value=\"true\" />\n    <property name=\"node.js.path.for.package.eslint\" value=\"project\" />\n    <property name=\"node.js.selected.package.eslint\" value=\"$PROJECT_DIR$/node_modules/eslint\" />\n    <property name=\"nodejs_interpreter_path.stuck_in_default_project\" value=\"undefined stuck path\" />\n    <property name=\"nodejs_npm_path_reset_for_default_project\" value=\"true\" />\n    <property name=\"settings.editor.selected.configurable\" value=\"preferences.sourceCode\" />\n  </component>\n  <component name=\"RunDashboard\">\n    <option name=\"ruleStates\">\n      <list>\n        <RuleState>\n          <option name=\"name\" value=\"ConfigurationTypeDashboardGroupingRule\" />\n        </RuleState>\n        <RuleState>\n          <option name=\"name\" value=\"StatusDashboardGroupingRule\" />\n        </RuleState>\n      </list>\n    </option>\n  </component>\n  <component name=\"SvnConfiguration\">\n    <configuration />\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"eb383c17-ce0d-4ffe-831c-27b37673ff13\" name=\"Default Changelist\" comment=\"\" />\n      <created>1553630922067</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1553630922067</updated>\n      <workItem from=\"1553630923346\" duration=\"5519000\" />\n    </task>\n    <servers />\n  </component>\n  <component name=\"TimeTrackingManager\">\n    <option name=\"totallyTimeSpent\" value=\"6174000\" />\n  </component>\n  <component name=\"ToolWindowManager\">\n    <frame x=\"840\" y=\"23\" width=\"840\" height=\"958\" extended-state=\"0\" />\n    <layout>\n      <window_info content_ui=\"combo\" id=\"Project\" order=\"0\" visible=\"true\" weight=\"0.1867168\" />\n      <window_info id=\"Structure\" order=\"1\" side_tool=\"true\" weight=\"0.25\" />\n      <window_info id=\"Capture Tool\" order=\"2\" />\n      <window_info id=\"Image Layers\" order=\"3\" />\n      <window_info id=\"Designer\" order=\"4\" />\n      <window_info id=\"UI Designer\" order=\"5\" />\n      <window_info id=\"Favorites\" order=\"6\" side_tool=\"true\" />\n      <window_info anchor=\"bottom\" id=\"Message\" order=\"0\" />\n      <window_info anchor=\"bottom\" id=\"Find\" order=\"1\" />\n      <window_info anchor=\"bottom\" id=\"Run\" order=\"2\" />\n      <window_info anchor=\"bottom\" id=\"Debug\" order=\"3\" weight=\"0.4\" />\n      <window_info anchor=\"bottom\" id=\"Cvs\" order=\"4\" weight=\"0.25\" />\n      <window_info anchor=\"bottom\" id=\"Inspection\" order=\"5\" weight=\"0.4\" />\n      <window_info anchor=\"bottom\" id=\"TODO\" order=\"6\" />\n      <window_info anchor=\"bottom\" id=\"Database Changes\" order=\"7\" show_stripe_button=\"false\" />\n      <window_info active=\"true\" anchor=\"bottom\" id=\"Terminal\" order=\"8\" visible=\"true\" weight=\"0.32332563\" />\n      <window_info anchor=\"bottom\" id=\"Event Log\" order=\"9\" side_tool=\"true\" />\n      <window_info anchor=\"bottom\" id=\"Version Control\" order=\"10\" />\n      <window_info anchor=\"right\" id=\"Commander\" internal_type=\"SLIDING\" order=\"0\" type=\"SLIDING\" weight=\"0.4\" />\n      <window_info anchor=\"right\" id=\"Ant Build\" order=\"1\" weight=\"0.25\" />\n      <window_info anchor=\"right\" content_ui=\"combo\" id=\"Hierarchy\" order=\"2\" weight=\"0.25\" />\n      <window_info anchor=\"right\" id=\"Palette\" order=\"3\" />\n      <window_info anchor=\"right\" id=\"Capture Analysis\" order=\"4\" />\n      <window_info anchor=\"right\" id=\"Theme Preview\" order=\"5\" />\n      <window_info anchor=\"right\" id=\"Palette&#9;\" order=\"6\" />\n      <window_info anchor=\"right\" id=\"Database\" order=\"7\" />\n      <window_info anchor=\"right\" id=\"Maven Projects\" order=\"8\" />\n    </layout>\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"1\" />\n  </component>\n  <component name=\"VcsContentAnnotationSettings\">\n    <option name=\"myLimit\" value=\"2678400000\" />\n  </component>\n  <component name=\"editorHistoryManager\">\n    <entry file=\"file://$PROJECT_DIR$/.gitignore\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"30\">\n          <caret line=\"2\" column=\"7\" selection-start-line=\"2\" selection-start-column=\"1\" selection-end-line=\"2\" selection-end-column=\"7\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/index.js\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state>\n          <folding>\n            <element signature=\"e#0#26#0\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/pages/signin.js\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"240\">\n          <caret line=\"16\" column=\"55\" lean-forward=\"true\" selection-start-line=\"16\" selection-start-column=\"16\" selection-end-line=\"16\" selection-end-column=\"55\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/pages/signup.js\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"45\">\n          <caret line=\"3\" selection-start-line=\"3\" selection-end-line=\"3\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/pages/home.js\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"225\">\n          <caret line=\"19\" column=\"19\" lean-forward=\"true\" selection-start-line=\"19\" selection-start-column=\"19\" selection-end-line=\"19\" selection-end-column=\"19\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/App.js\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"197\">\n          <caret line=\"14\" column=\"33\" selection-start-line=\"14\" selection-start-column=\"33\" selection-end-line=\"14\" selection-end-column=\"33\" />\n          <folding>\n            <element signature=\"e#0#41#0\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/index.css\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"192\">\n          <caret line=\"18\" column=\"16\" selection-start-line=\"18\" selection-start-column=\"16\" selection-end-line=\"18\" selection-end-column=\"16\" />\n        </state>\n      </provider>\n    </entry>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(date 1553687603000)
++++ .idea/workspace.xml	(date 1553691796000)
+@@ -1,7 +1,13 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="eb383c17-ce0d-4ffe-831c-27b37673ff13" name="Default Changelist" comment="" />
++    <list default="true" id="eb383c17-ce0d-4ffe-831c-27b37673ff13" name="Default Changelist" comment="">
++      <change afterPath="$PROJECT_DIR$/src/firebase/firebase-auth.js" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/pages/signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/signup.js" afterDir="false" />
++    </list>
+     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -20,13 +26,13 @@
+         <counts>
+           <entry key="css" value="1" />
+           <entry key="gitignore" value="1" />
+-          <entry key="js" value="6" />
++          <entry key="js" value="7" />
+         </counts>
+       </usages-collector>
+       <usages-collector id="statistics.file.types.open">
+         <counts>
+           <entry key="CSS" value="1" />
+-          <entry key="JavaScript" value="6" />
++          <entry key="JavaScript" value="7" />
+           <entry key="PLAIN_TEXT" value="1" />
+         </counts>
+       </usages-collector>
+@@ -34,13 +40,13 @@
+         <counts>
+           <entry key="css" value="432" />
+           <entry key="gitignore" value="6" />
+-          <entry key="js" value="1185" />
++          <entry key="js" value="1475" />
+         </counts>
+       </usages-collector>
+       <usages-collector id="statistics.file.types.edit">
+         <counts>
+           <entry key="CSS" value="432" />
+-          <entry key="JavaScript" value="1185" />
++          <entry key="JavaScript" value="1475" />
+           <entry key="PLAIN_TEXT" value="6" />
+         </counts>
+       </usages-collector>
+@@ -56,8 +62,8 @@
+       <file pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/src/App.js">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="197">
+-              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
++            <state relative-caret-position="167">
++              <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+               <folding>
+                 <element signature="e#0#41#0" expanded="true" />
+               </folding>
+@@ -65,11 +71,11 @@
+           </provider>
+         </entry>
+       </file>
+-      <file pinned="false" current-in-tab="false">
++      <file pinned="false" current-in-tab="true">
+         <entry file="file://$PROJECT_DIR$/src/pages/signin.js">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="240">
+-              <caret line="16" column="55" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="55" />
++            <state relative-caret-position="255">
++              <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+             </state>
+           </provider>
+         </entry>
+@@ -77,8 +83,8 @@
+       <file pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/src/pages/signup.js">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="45">
+-              <caret line="3" selection-start-line="3" selection-end-line="3" />
++            <state relative-caret-position="240">
++              <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+             </state>
+           </provider>
+         </entry>
+@@ -86,8 +92,8 @@
+       <file pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/src/index.css">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="192">
+-              <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
++            <state relative-caret-position="-31">
++              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+             </state>
+           </provider>
+         </entry>
+@@ -96,16 +102,25 @@
+         <entry file="file://$PROJECT_DIR$/src/pages/home.js">
+           <provider selected="true" editor-type-id="text-editor">
+             <state relative-caret-position="225">
+-              <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
++              <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+             </state>
+           </provider>
+         </entry>
+       </file>
+-      <file pinned="false" current-in-tab="true">
++      <file pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/config/firebase-config.js">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="90">
+-              <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
++            <state relative-caret-position="150">
++              <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/firebase/firebase-auth.js">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="195">
++              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+             </state>
+           </provider>
+         </entry>
+@@ -126,9 +141,11 @@
+         <option value="$PROJECT_DIR$/.gitignore" />
+         <option value="$PROJECT_DIR$/src/pages/home.js" />
+         <option value="$PROJECT_DIR$/src/pages/signin.js" />
++        <option value="$PROJECT_DIR$/src/index.css" />
++        <option value="$PROJECT_DIR$/config/firebase-config.js" />
++        <option value="$PROJECT_DIR$/src/firebase/firebase-auth.js" />
+         <option value="$PROJECT_DIR$/src/pages/signup.js" />
+         <option value="$PROJECT_DIR$/src/App.js" />
+-        <option value="$PROJECT_DIR$/src/index.css" />
+       </list>
+     </option>
+   </component>
+@@ -179,6 +196,12 @@
+               <item name="user_authentication_react" type="b2602c69:ProjectViewProjectNode" />
+               <item name="user_authentication_react" type="462c0819:PsiDirectoryNode" />
+               <item name="src" type="462c0819:PsiDirectoryNode" />
++              <item name="firebase" type="462c0819:PsiDirectoryNode" />
++            </path>
++            <path>
++              <item name="user_authentication_react" type="b2602c69:ProjectViewProjectNode" />
++              <item name="user_authentication_react" type="462c0819:PsiDirectoryNode" />
++              <item name="src" type="462c0819:PsiDirectoryNode" />
+               <item name="pages" type="462c0819:PsiDirectoryNode" />
+             </path>
+             <path>
+@@ -201,7 +224,7 @@
+   <component name="PropertiesComponent">
+     <property name="WebServerToolWindowFactoryState" value="false" />
+     <property name="aspect.path.notification.shown" value="true" />
+-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553687455038" />
++    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553691778022" />
+     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+     <property name="node.js.detected.package.eslint" value="true" />
+     <property name="node.js.path.for.package.eslint" value="project" />
+@@ -237,10 +260,11 @@
+     <servers />
+   </component>
+   <component name="TimeTrackingManager">
+-    <option name="totallyTimeSpent" value="6174000" />
++    <option name="totallyTimeSpent" value="7973000" />
+   </component>
+   <component name="ToolWindowManager">
+     <frame x="840" y="23" width="840" height="958" extended-state="0" />
++    <editor active="true" />
+     <layout>
+       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1867168" />
+       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+@@ -294,41 +318,55 @@
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/pages/signin.js">
++    <entry file="file://$PROJECT_DIR$/src/pages/home.js">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="225">
++          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/config/firebase-config.js">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="150">
++          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/firebase/firebase-auth.js">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="240">
+-          <caret line="16" column="55" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="55" />
++        <state relative-caret-position="195">
++          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+         </state>
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/src/pages/signup.js">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="45">
+-          <caret line="3" selection-start-line="3" selection-end-line="3" />
++        <state relative-caret-position="240">
++          <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/pages/home.js">
++    <entry file="file://$PROJECT_DIR$/src/index.css">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="225">
+-          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
++        <state relative-caret-position="-31">
++          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+         </state>
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/src/App.js">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="197">
+-          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
++        <state relative-caret-position="167">
++          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+           <folding>
+             <element signature="e#0#41#0" expanded="true" />
+           </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/index.css">
++    <entry file="file://$PROJECT_DIR$/src/pages/signin.js">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="192">
+-          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
++        <state relative-caret-position="255">
++          <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+         </state>
+       </provider>
+     </entry>
+Index: package.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\n  \"name\": \"user_authentication\",\n  \"version\": \"0.1.0\",\n  \"private\": true,\n  \"dependencies\": {\n    \"react\": \"^16.8.5\",\n    \"react-dom\": \"^16.8.5\",\n    \"react-router-dom\": \"^5.0.0\",\n    \"react-scripts\": \"2.1.8\"\n  },\n  \"scripts\": {\n    \"start\": \"react-scripts start\",\n    \"build\": \"react-scripts build\",\n    \"test\": \"react-scripts test\",\n    \"eject\": \"react-scripts eject\"\n  },\n  \"eslintConfig\": {\n    \"extends\": \"react-app\"\n  },\n  \"browserslist\": [\n    \">0.2%\",\n    \"not dead\",\n    \"not ie <= 11\",\n    \"not op_mini all\"\n  ]\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- package.json	(date 1553687603000)
++++ package.json	(date 1553690421000)
+@@ -3,6 +3,7 @@
+   "version": "0.1.0",
+   "private": true,
+   "dependencies": {
++    "firebase": "^5.9.1",
+     "react": "^16.8.5",
+     "react-dom": "^16.8.5",
+     "react-router-dom": "^5.0.0",
+Index: src/firebase/firebase-auth.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/firebase/firebase-auth.js	(date 1553691316000)
++++ src/firebase/firebase-auth.js	(date 1553691316000)
+@@ -0,0 +1,13 @@
++import firebase from 'firebase'
++
++export const createUserWithEmailAndPassword = (email, password) => {
++    firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
++        var errorCode = error.code;
++        var errorMessage = error.message;
++
++        if (errorMessage)
++            console.log('successful')
++        else console.log('failed')
++
++    });
++}
+Index: package-lock.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- package-lock.json	(date 1553687603000)
++++ package-lock.json	(date 1553690421000)
+@@ -856,6 +856,155 @@
+       "resolved": "https://registry.npmjs.org/@csstools/convert-colors/-/convert-colors-1.4.0.tgz",
+       "integrity": "sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw=="
+     },
++    "@firebase/app": {
++      "version": "0.3.13",
++      "resolved": "https://registry.npmjs.org/@firebase/app/-/app-0.3.13.tgz",
++      "integrity": "sha512-uhST28epGU7zW+KzYWt/bLzLMy+meOZ9XKpNt5VOTHObMlfKjH7t8eTAtPAJTe5ROoFQkdzkRIOy+EwRQ6uFMg==",
++      "requires": {
++        "@firebase/app-types": "0.3.7",
++        "@firebase/util": "0.2.11",
++        "dom-storage": "2.1.0",
++        "tslib": "1.9.3",
++        "xmlhttprequest": "1.8.0"
++      }
++    },
++    "@firebase/app-types": {
++      "version": "0.3.7",
++      "resolved": "https://registry.npmjs.org/@firebase/app-types/-/app-types-0.3.7.tgz",
++      "integrity": "sha512-rY/dw4GeCMhCv9qs0yX8dqL+DL4siQYNkUXAKujte3jVlEy0wNW+AYIkjgFB6jxO39lWDC2hFbYeFXbsFlwtUg=="
++    },
++    "@firebase/auth": {
++      "version": "0.9.6",
++      "resolved": "https://registry.npmjs.org/@firebase/auth/-/auth-0.9.6.tgz",
++      "integrity": "sha512-j7W0u0/ZPiKi5bbRdBI35FIzaAnmPbGtKkyLS/0gfATwmHDeGYdTwU67SoEHagNPzNtXTInIYU3wVzrX2zlApA==",
++      "requires": {
++        "@firebase/auth-types": "0.5.5"
++      }
++    },
++    "@firebase/auth-types": {
++      "version": "0.5.5",
++      "resolved": "https://registry.npmjs.org/@firebase/auth-types/-/auth-types-0.5.5.tgz",
++      "integrity": "sha512-1JDDWZPBhHcW08NoZfkviVlvsPJQpk4gaUKI4sua0EXggpOn5JolXzIs7ZUXfqyLtBRbx690HZeb8orQPzXUEg=="
++    },
++    "@firebase/database": {
++      "version": "0.3.16",
++      "resolved": "https://registry.npmjs.org/@firebase/database/-/database-0.3.16.tgz",
++      "integrity": "sha512-89Zx6PtZrYcOeOJKoTGSvr/YhNZ3KYLUfloDLgXtNGP6iABkxdpI154kLGL9Bas70ueoIX5ScFmd9eKSwUwWuA==",
++      "requires": {
++        "@firebase/database-types": "0.3.8",
++        "@firebase/logger": "0.1.10",
++        "@firebase/util": "0.2.11",
++        "faye-websocket": "0.11.1",
++        "tslib": "1.9.3"
++      }
++    },
++    "@firebase/database-types": {
++      "version": "0.3.8",
++      "resolved": "https://registry.npmjs.org/@firebase/database-types/-/database-types-0.3.8.tgz",
++      "integrity": "sha512-n/D/0S5bIsgrJuFoBa/4F1K1/Lr9jcS3O7sBBsQJJjkZ6WsE0J8Pg5AHJargBYspLh+4x43Pa7x/r5xGjRxbgA=="
++    },
++    "@firebase/firestore": {
++      "version": "1.1.1",
++      "resolved": "https://registry.npmjs.org/@firebase/firestore/-/firestore-1.1.1.tgz",
++      "integrity": "sha512-LcJz8W2WSTSaDJuRkx6NcRbhqjTbG+T+kgkS/xel3XbslkCHT7YHTwJqbJCZu7a6KggEAc1OW4qcngaLbPYzag==",
++      "requires": {
++        "@firebase/firestore-types": "1.1.1",
++        "@firebase/logger": "0.1.10",
++        "@firebase/webchannel-wrapper": "0.2.16",
++        "grpc": "1.19.0",
++        "tslib": "1.9.3"
++      }
++    },
++    "@firebase/firestore-types": {
++      "version": "1.1.1",
++      "resolved": "https://registry.npmjs.org/@firebase/firestore-types/-/firestore-types-1.1.1.tgz",
++      "integrity": "sha512-l0hgXrUKj0kW2+unJPiNpBI2fCjvr4ELD7ikSTczP4nX61r55VHdxP0Ft1dbjOq/ICUo2kq/b8AWDeVUF2u6ow=="
++    },
++    "@firebase/functions": {
++      "version": "0.4.3",
++      "resolved": "https://registry.npmjs.org/@firebase/functions/-/functions-0.4.3.tgz",
++      "integrity": "sha512-KQ7zYouuxx0f2mIusWtDy6MgFl8u1mwdwTkb9K+0jrViyWQ0KMRL3xcryVvXe/OEZzRmdiqYwpPp5uNQWWu19g==",
++      "requires": {
++        "@firebase/functions-types": "0.3.2",
++        "@firebase/messaging-types": "0.2.8",
++        "isomorphic-fetch": "2.2.1",
++        "tslib": "1.9.3"
++      }
++    },
++    "@firebase/functions-types": {
++      "version": "0.3.2",
++      "resolved": "https://registry.npmjs.org/@firebase/functions-types/-/functions-types-0.3.2.tgz",
++      "integrity": "sha512-TZAlW+SAg8P/m/OY6XgqUufq/KPX56psGvJ58sDztsBTUWg6FzGqIU8n7lBwlYDvHD9Ca6AlGQyxCfYPHtTKzA=="
++    },
++    "@firebase/logger": {
++      "version": "0.1.10",
++      "resolved": "https://registry.npmjs.org/@firebase/logger/-/logger-0.1.10.tgz",
++      "integrity": "sha512-JRDSP1OtvMdzhLOuNxSB47rFCsAg59tcduSjCfSrDl1p2xsiBSnclcn/0bUHIG7I0vsA3mGcAx5YuTrvWTa0wQ=="
++    },
++    "@firebase/messaging": {
++      "version": "0.3.15",
++      "resolved": "https://registry.npmjs.org/@firebase/messaging/-/messaging-0.3.15.tgz",
++      "integrity": "sha512-g2xRwCq0JoYuqQOQfqxvpTjQyGHkr+DvAUsOsgpfAFa4U1Y8PeKwmGc+mNFWWwari6i3RoWwCgDZTTLPb1LL6Q==",
++      "requires": {
++        "@firebase/messaging-types": "0.2.8",
++        "@firebase/util": "0.2.11",
++        "tslib": "1.9.3"
++      }
++    },
++    "@firebase/messaging-types": {
++      "version": "0.2.8",
++      "resolved": "https://registry.npmjs.org/@firebase/messaging-types/-/messaging-types-0.2.8.tgz",
++      "integrity": "sha512-Pz3IZqfWzb/cHBBNAjLKF+yQS7gYtwow1bwXLQhE+ptHB+2V9fEcqYhOYUpDbuE51cH/XO7qGNFVnXSveFBt9g=="
++    },
++    "@firebase/polyfill": {
++      "version": "0.3.9",
++      "resolved": "https://registry.npmjs.org/@firebase/polyfill/-/polyfill-0.3.9.tgz",
++      "integrity": "sha512-qA3asZZ1tTfO9b4TjCzvS2pYTIO8XMbqsPHx9yyXkoeZpLLpR8wUE0IHhHKr4urA7IogjApk1MKrFZhfCtB4DA==",
++      "requires": {
++        "core-js": "2.6.5",
++        "promise-polyfill": "8.1.0",
++        "whatwg-fetch": "2.0.4"
++      },
++      "dependencies": {
++        "core-js": {
++          "version": "2.6.5",
++          "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.6.5.tgz",
++          "integrity": "sha512-klh/kDpwX8hryYL14M9w/xei6vrv6sE8gTHDG7/T/+SEovB/G4ejwcfE/CBzO6Edsu+OETZMZ3wcX/EjUkrl5A=="
++        },
++        "whatwg-fetch": {
++          "version": "2.0.4",
++          "resolved": "https://registry.npmjs.org/whatwg-fetch/-/whatwg-fetch-2.0.4.tgz",
++          "integrity": "sha512-dcQ1GWpOD/eEQ97k66aiEVpNnapVj90/+R+SXTPYGHpYBBypfKJEQjLrvMZ7YXbKm21gXd4NcuxUTjiv1YtLng=="
++        }
++      }
++    },
++    "@firebase/storage": {
++      "version": "0.2.12",
++      "resolved": "https://registry.npmjs.org/@firebase/storage/-/storage-0.2.12.tgz",
++      "integrity": "sha512-CAN370NV7+n2iXj+O/8LqJk3aWQPasXHrIvX6V4kIzqNdlPEZuEbsE7wWZ2B2Aw8JyJw0zWYhnbU+b9IlH8S6Q==",
++      "requires": {
++        "@firebase/storage-types": "0.2.8",
++        "tslib": "1.9.3"
++      }
++    },
++    "@firebase/storage-types": {
++      "version": "0.2.8",
++      "resolved": "https://registry.npmjs.org/@firebase/storage-types/-/storage-types-0.2.8.tgz",
++      "integrity": "sha512-kWSmS60OkqE0MDUmvuPNpkWUiDwV5jqzrGEFrsUixSpT8bbxHnSwmnWk5njH+yH0K4e1957JB5P/dtscK0rc7w=="
++    },
++    "@firebase/util": {
++      "version": "0.2.11",
++      "resolved": "https://registry.npmjs.org/@firebase/util/-/util-0.2.11.tgz",
++      "integrity": "sha512-sYIxzZcAeK1k0fLa1gWSnIrBFtPLFN+mgTTlQ29Pe9MBppSBluKguh43ejQioDgcGwPGhrbQx8urmSiI55SrCQ==",
++      "requires": {
++        "tslib": "1.9.3"
++      }
++    },
++    "@firebase/webchannel-wrapper": {
++      "version": "0.2.16",
++      "resolved": "https://registry.npmjs.org/@firebase/webchannel-wrapper/-/webchannel-wrapper-0.2.16.tgz",
++      "integrity": "sha512-p5QPUrmag+C77l2S7jtLlixNyBGqgeQLknzZY9ck76ipAUFNk0uJEfHJiI1Tz2pEjB7XwmoovaDhGlQDvNb5vA=="
++    },
+     "@mrmlnc/readdir-enhanced": {
+       "version": "2.2.1",
+       "resolved": "https://registry.npmjs.org/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz",
+@@ -1678,6 +1827,15 @@
+       "resolved": "https://registry.npmjs.org/asap/-/asap-2.0.6.tgz",
+       "integrity": "sha1-5QNHYR1+aQlDIIu9r+vLwvuGbUY="
+     },
++    "ascli": {
++      "version": "1.0.1",
++      "resolved": "https://registry.npmjs.org/ascli/-/ascli-1.0.1.tgz",
++      "integrity": "sha1-vPpZdKYvGOgcq660lzKrSoj5Brw=",
++      "requires": {
++        "colour": "~0.7.1",
++        "optjs": "~3.2.2"
++      }
++    },
+     "asn1": {
+       "version": "0.2.4",
+       "resolved": "https://registry.npmjs.org/asn1/-/asn1-0.2.4.tgz",
+@@ -2604,6 +2762,14 @@
+       "resolved": "https://registry.npmjs.org/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz",
+       "integrity": "sha1-hZgoeOIbmOHGZCXgPQF0eI9Wnug="
+     },
++    "bytebuffer": {
++      "version": "5.0.1",
++      "resolved": "https://registry.npmjs.org/bytebuffer/-/bytebuffer-5.0.1.tgz",
++      "integrity": "sha1-WC7qSxqHO20CCkjVjfhfC7ps/d0=",
++      "requires": {
++        "long": "~3"
++      }
++    },
+     "bytes": {
+       "version": "3.0.0",
+       "resolved": "https://registry.npmjs.org/bytes/-/bytes-3.0.0.tgz",
+@@ -3512,6 +3678,11 @@
+         "simple-swizzle": "^0.2.2"
+       }
+     },
++    "colour": {
++      "version": "0.7.1",
++      "resolved": "https://registry.npmjs.org/colour/-/colour-0.7.1.tgz",
++      "integrity": "sha1-nLFpkX7F0SwHNtPoaFdG3xyt93g="
++    },
+     "combined-stream": {
+       "version": "1.0.7",
+       "resolved": "https://registry.npmjs.org/combined-stream/-/combined-stream-1.0.7.tgz",
+@@ -4582,6 +4753,11 @@
+         "entities": "^1.1.1"
+       }
+     },
++    "dom-storage": {
++      "version": "2.1.0",
++      "resolved": "https://registry.npmjs.org/dom-storage/-/dom-storage-2.1.0.tgz",
++      "integrity": "sha512-g6RpyWXzl0RR6OTElHKBl7nwnK87GUyZMYC7JWsB/IA73vpqK2K6LT39x4VepLxlSsWBFrPVLnsSR5Jyty0+2Q=="
++    },
+     "domain-browser": {
+       "version": "1.2.0",
+       "resolved": "https://registry.npmjs.org/domain-browser/-/domain-browser-1.2.0.tgz",
+@@ -5878,6 +6054,21 @@
+         "locate-path": "^2.0.0"
+       }
+     },
++    "firebase": {
++      "version": "5.9.1",
++      "resolved": "https://registry.npmjs.org/firebase/-/firebase-5.9.1.tgz",
++      "integrity": "sha512-L4edGoHlWY4EM1IA2ItpDushst+Sg9JZ3D3elHaxtg4tutYZOE8TsP+xjp/yC/iruhUVeXTIVBit4H6+pFw6qg==",
++      "requires": {
++        "@firebase/app": "0.3.13",
++        "@firebase/auth": "0.9.6",
++        "@firebase/database": "0.3.16",
++        "@firebase/firestore": "1.1.1",
++        "@firebase/functions": "0.4.3",
++        "@firebase/messaging": "0.3.15",
++        "@firebase/polyfill": "0.3.9",
++        "@firebase/storage": "0.2.12"
++      }
++    },
+     "flat-cache": {
+       "version": "1.3.4",
+       "resolved": "https://registry.npmjs.org/flat-cache/-/flat-cache-1.3.4.tgz",
+@@ -6952,6 +7143,423 @@
+       "resolved": "https://registry.npmjs.org/growly/-/growly-1.3.0.tgz",
+       "integrity": "sha1-8QdIy+dq+WS3yWyTxrzCivEgwIE="
+     },
++    "grpc": {
++      "version": "1.19.0",
++      "resolved": "https://registry.npmjs.org/grpc/-/grpc-1.19.0.tgz",
++      "integrity": "sha512-xX+jZ1M3YXjngsRj/gTxB4EwM0WoWUr54DmyNq9xTeg1oSuVaTPD/PK9wnZKOJWTt1pkeFspXqwJPhddZNxHOA==",
++      "requires": {
++        "lodash.camelcase": "^4.3.0",
++        "lodash.clone": "^4.5.0",
++        "nan": "^2.0.0",
++        "node-pre-gyp": "^0.12.0",
++        "protobufjs": "^5.0.3"
++      },
++      "dependencies": {
++        "abbrev": {
++          "version": "1.1.1",
++          "bundled": true
++        },
++        "ansi-regex": {
++          "version": "2.1.1",
++          "bundled": true
++        },
++        "aproba": {
++          "version": "1.2.0",
++          "bundled": true
++        },
++        "are-we-there-yet": {
++          "version": "1.1.5",
++          "bundled": true,
++          "requires": {
++            "delegates": "^1.0.0",
++            "readable-stream": "^2.0.6"
++          }
++        },
++        "balanced-match": {
++          "version": "1.0.0",
++          "bundled": true
++        },
++        "brace-expansion": {
++          "version": "1.1.11",
++          "bundled": true,
++          "requires": {
++            "balanced-match": "^1.0.0",
++            "concat-map": "0.0.1"
++          }
++        },
++        "chownr": {
++          "version": "1.1.1",
++          "bundled": true
++        },
++        "code-point-at": {
++          "version": "1.1.0",
++          "bundled": true
++        },
++        "concat-map": {
++          "version": "0.0.1",
++          "bundled": true
++        },
++        "console-control-strings": {
++          "version": "1.1.0",
++          "bundled": true
++        },
++        "core-util-is": {
++          "version": "1.0.2",
++          "bundled": true
++        },
++        "debug": {
++          "version": "2.6.9",
++          "bundled": true,
++          "requires": {
++            "ms": "2.0.0"
++          }
++        },
++        "deep-extend": {
++          "version": "0.6.0",
++          "bundled": true
++        },
++        "delegates": {
++          "version": "1.0.0",
++          "bundled": true
++        },
++        "detect-libc": {
++          "version": "1.0.3",
++          "bundled": true
++        },
++        "fs-minipass": {
++          "version": "1.2.5",
++          "bundled": true,
++          "requires": {
++            "minipass": "^2.2.1"
++          }
++        },
++        "fs.realpath": {
++          "version": "1.0.0",
++          "bundled": true
++        },
++        "gauge": {
++          "version": "2.7.4",
++          "bundled": true,
++          "requires": {
++            "aproba": "^1.0.3",
++            "console-control-strings": "^1.0.0",
++            "has-unicode": "^2.0.0",
++            "object-assign": "^4.1.0",
++            "signal-exit": "^3.0.0",
++            "string-width": "^1.0.1",
++            "strip-ansi": "^3.0.1",
++            "wide-align": "^1.1.0"
++          }
++        },
++        "glob": {
++          "version": "7.1.2",
++          "bundled": true,
++          "requires": {
++            "fs.realpath": "^1.0.0",
++            "inflight": "^1.0.4",
++            "inherits": "2",
++            "minimatch": "^3.0.4",
++            "once": "^1.3.0",
++            "path-is-absolute": "^1.0.0"
++          }
++        },
++        "has-unicode": {
++          "version": "2.0.1",
++          "bundled": true
++        },
++        "iconv-lite": {
++          "version": "0.4.23",
++          "bundled": true,
++          "requires": {
++            "safer-buffer": ">= 2.1.2 < 3"
++          }
++        },
++        "ignore-walk": {
++          "version": "3.0.1",
++          "bundled": true,
++          "requires": {
++            "minimatch": "^3.0.4"
++          }
++        },
++        "inflight": {
++          "version": "1.0.6",
++          "bundled": true,
++          "requires": {
++            "once": "^1.3.0",
++            "wrappy": "1"
++          }
++        },
++        "inherits": {
++          "version": "2.0.3",
++          "bundled": true
++        },
++        "ini": {
++          "version": "1.3.5",
++          "bundled": true
++        },
++        "is-fullwidth-code-point": {
++          "version": "1.0.0",
++          "bundled": true,
++          "requires": {
++            "number-is-nan": "^1.0.0"
++          }
++        },
++        "isarray": {
++          "version": "1.0.0",
++          "bundled": true
++        },
++        "minimatch": {
++          "version": "3.0.4",
++          "bundled": true,
++          "requires": {
++            "brace-expansion": "^1.1.7"
++          }
++        },
++        "minimist": {
++          "version": "1.2.0",
++          "bundled": true
++        },
++        "minipass": {
++          "version": "2.3.5",
++          "bundled": true,
++          "requires": {
++            "safe-buffer": "^5.1.2",
++            "yallist": "^3.0.0"
++          }
++        },
++        "minizlib": {
++          "version": "1.1.1",
++          "bundled": true,
++          "requires": {
++            "minipass": "^2.2.1"
++          }
++        },
++        "mkdirp": {
++          "version": "0.5.1",
++          "bundled": true,
++          "requires": {
++            "minimist": "0.0.8"
++          },
++          "dependencies": {
++            "minimist": {
++              "version": "0.0.8",
++              "bundled": true
++            }
++          }
++        },
++        "ms": {
++          "version": "2.0.0",
++          "bundled": true
++        },
++        "needle": {
++          "version": "2.2.4",
++          "bundled": true,
++          "requires": {
++            "debug": "^2.1.2",
++            "iconv-lite": "^0.4.4",
++            "sax": "^1.2.4"
++          }
++        },
++        "node-pre-gyp": {
++          "version": "0.12.0",
++          "bundled": true,
++          "requires": {
++            "detect-libc": "^1.0.2",
++            "mkdirp": "^0.5.1",
++            "needle": "^2.2.1",
++            "nopt": "^4.0.1",
++            "npm-packlist": "^1.1.6",
++            "npmlog": "^4.0.2",
++            "rc": "^1.2.7",
++            "rimraf": "^2.6.1",
++            "semver": "^5.3.0",
++            "tar": "^4"
++          }
++        },
++        "nopt": {
++          "version": "4.0.1",
++          "bundled": true,
++          "requires": {
++            "abbrev": "1",
++            "osenv": "^0.1.4"
++          }
++        },
++        "npm-bundled": {
++          "version": "1.0.5",
++          "bundled": true
++        },
++        "npm-packlist": {
++          "version": "1.1.12",
++          "bundled": true,
++          "requires": {
++            "ignore-walk": "^3.0.1",
++            "npm-bundled": "^1.0.1"
++          }
++        },
++        "npmlog": {
++          "version": "4.1.2",
++          "bundled": true,
++          "requires": {
++            "are-we-there-yet": "~1.1.2",
++            "console-control-strings": "~1.1.0",
++            "gauge": "~2.7.3",
++            "set-blocking": "~2.0.0"
++          }
++        },
++        "number-is-nan": {
++          "version": "1.0.1",
++          "bundled": true
++        },
++        "object-assign": {
++          "version": "4.1.1",
++          "bundled": true
++        },
++        "once": {
++          "version": "1.4.0",
++          "bundled": true,
++          "requires": {
++            "wrappy": "1"
++          }
++        },
++        "os-homedir": {
++          "version": "1.0.2",
++          "bundled": true
++        },
++        "os-tmpdir": {
++          "version": "1.0.2",
++          "bundled": true
++        },
++        "osenv": {
++          "version": "0.1.5",
++          "bundled": true,
++          "requires": {
++            "os-homedir": "^1.0.0",
++            "os-tmpdir": "^1.0.0"
++          }
++        },
++        "path-is-absolute": {
++          "version": "1.0.1",
++          "bundled": true
++        },
++        "process-nextick-args": {
++          "version": "2.0.0",
++          "bundled": true
++        },
++        "rc": {
++          "version": "1.2.8",
++          "bundled": true,
++          "requires": {
++            "deep-extend": "^0.6.0",
++            "ini": "~1.3.0",
++            "minimist": "^1.2.0",
++            "strip-json-comments": "~2.0.1"
++          }
++        },
++        "readable-stream": {
++          "version": "2.3.6",
++          "bundled": true,
++          "requires": {
++            "core-util-is": "~1.0.0",
++            "inherits": "~2.0.3",
++            "isarray": "~1.0.0",
++            "process-nextick-args": "~2.0.0",
++            "safe-buffer": "~5.1.1",
++            "string_decoder": "~1.1.1",
++            "util-deprecate": "~1.0.1"
++          }
++        },
++        "rimraf": {
++          "version": "2.6.2",
++          "bundled": true,
++          "requires": {
++            "glob": "^7.0.5"
++          }
++        },
++        "safe-buffer": {
++          "version": "5.1.2",
++          "bundled": true
++        },
++        "safer-buffer": {
++          "version": "2.1.2",
++          "bundled": true
++        },
++        "sax": {
++          "version": "1.2.4",
++          "bundled": true
++        },
++        "semver": {
++          "version": "5.6.0",
++          "bundled": true
++        },
++        "set-blocking": {
++          "version": "2.0.0",
++          "bundled": true
++        },
++        "signal-exit": {
++          "version": "3.0.2",
++          "bundled": true
++        },
++        "string-width": {
++          "version": "1.0.2",
++          "bundled": true,
++          "requires": {
++            "code-point-at": "^1.0.0",
++            "is-fullwidth-code-point": "^1.0.0",
++            "strip-ansi": "^3.0.0"
++          }
++        },
++        "string_decoder": {
++          "version": "1.1.1",
++          "bundled": true,
++          "requires": {
++            "safe-buffer": "~5.1.0"
++          }
++        },
++        "strip-ansi": {
++          "version": "3.0.1",
++          "bundled": true,
++          "requires": {
++            "ansi-regex": "^2.0.0"
++          }
++        },
++        "strip-json-comments": {
++          "version": "2.0.1",
++          "bundled": true
++        },
++        "tar": {
++          "version": "4.4.8",
++          "bundled": true,
++          "requires": {
++            "chownr": "^1.1.1",
++            "fs-minipass": "^1.2.5",
++            "minipass": "^2.3.4",
++            "minizlib": "^1.1.1",
++            "mkdirp": "^0.5.0",
++            "safe-buffer": "^5.1.2",
++            "yallist": "^3.0.2"
++          }
++        },
++        "util-deprecate": {
++          "version": "1.0.2",
++          "bundled": true
++        },
++        "wide-align": {
++          "version": "1.1.3",
++          "bundled": true,
++          "requires": {
++            "string-width": "^1.0.2 || 2"
++          }
++        },
++        "wrappy": {
++          "version": "1.0.2",
++          "bundled": true
++        },
++        "yallist": {
++          "version": "3.0.3",
++          "bundled": true
++        }
++      }
++    },
+     "gud": {
+       "version": "1.0.0",
+       "resolved": "https://registry.npmjs.org/gud/-/gud-1.0.0.tgz",
+@@ -9110,6 +9718,11 @@
+       "resolved": "https://registry.npmjs.org/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz",
+       "integrity": "sha1-soqmKIorn8ZRA1x3EfZathkDMaY="
+     },
++    "lodash.clone": {
++      "version": "4.5.0",
++      "resolved": "https://registry.npmjs.org/lodash.clone/-/lodash.clone-4.5.0.tgz",
++      "integrity": "sha1-GVhwRQ9aExkkeN9Lw9I9LeoZB7Y="
++    },
+     "lodash.memoize": {
+       "version": "4.1.2",
+       "resolved": "https://registry.npmjs.org/lodash.memoize/-/lodash.memoize-4.1.2.tgz",
+@@ -9152,6 +9765,11 @@
+       "resolved": "https://registry.npmjs.org/loglevel/-/loglevel-1.6.1.tgz",
+       "integrity": "sha1-4PyVEztu8nbNyIh82vJKpvFW+Po="
+     },
++    "long": {
++      "version": "3.2.0",
++      "resolved": "https://registry.npmjs.org/long/-/long-3.2.0.tgz",
++      "integrity": "sha1-2CG3E4yhy1gcFymQ7xTbIAtcR0s="
++    },
+     "loose-envify": {
+       "version": "1.4.0",
+       "resolved": "https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz",
+@@ -9539,8 +10157,7 @@
+     "nan": {
+       "version": "2.13.2",
+       "resolved": "https://registry.npmjs.org/nan/-/nan-2.13.2.tgz",
+-      "integrity": "sha512-TghvYc72wlMGMVMluVo9WRJc0mB8KxxF/gZ4YYFy7V2ZQX9l7rgbPg7vjS9mt6U5HXODVFVI2bOduCzwOMv/lw==",
+-      "optional": true
++      "integrity": "sha512-TghvYc72wlMGMVMluVo9WRJc0mB8KxxF/gZ4YYFy7V2ZQX9l7rgbPg7vjS9mt6U5HXODVFVI2bOduCzwOMv/lw=="
+     },
+     "nanomatch": {
+       "version": "1.2.13",
+@@ -9957,6 +10574,11 @@
+         "wordwrap": "~1.0.0"
+       }
+     },
++    "optjs": {
++      "version": "3.2.2",
++      "resolved": "https://registry.npmjs.org/optjs/-/optjs-3.2.2.tgz",
++      "integrity": "sha1-aabOicRCpEQDFBrS+bNwvVu29O4="
++    },
+     "original": {
+       "version": "1.0.2",
+       "resolved": "https://registry.npmjs.org/original/-/original-1.0.2.tgz",
+@@ -12633,6 +13255,11 @@
+       "resolved": "https://registry.npmjs.org/promise-inflight/-/promise-inflight-1.0.1.tgz",
+       "integrity": "sha1-mEcocL8igTL8vdhoEputEsPAKeM="
+     },
++    "promise-polyfill": {
++      "version": "8.1.0",
++      "resolved": "https://registry.npmjs.org/promise-polyfill/-/promise-polyfill-8.1.0.tgz",
++      "integrity": "sha512-OzSf6gcCUQ01byV4BgwyUCswlaQQ6gzXc23aLQWhicvfX9kfsUiUhgt3CCQej8jDnl8/PhGF31JdHX2/MzF3WA=="
++    },
+     "prompts": {
+       "version": "0.1.14",
+       "resolved": "https://registry.npmjs.org/prompts/-/prompts-0.1.14.tgz",
+@@ -12660,6 +13287,74 @@
+         "xtend": "^4.0.1"
+       }
+     },
++    "protobufjs": {
++      "version": "5.0.3",
++      "resolved": "https://registry.npmjs.org/protobufjs/-/protobufjs-5.0.3.tgz",
++      "integrity": "sha512-55Kcx1MhPZX0zTbVosMQEO5R6/rikNXd9b6RQK4KSPcrSIIwoXTtebIczUrXlwaSrbz4x8XUVThGPob1n8I4QA==",
++      "requires": {
++        "ascli": "~1",
++        "bytebuffer": "~5",
++        "glob": "^7.0.5",
++        "yargs": "^3.10.0"
++      },
++      "dependencies": {
++        "camelcase": {
++          "version": "2.1.1",
++          "resolved": "https://registry.npmjs.org/camelcase/-/camelcase-2.1.1.tgz",
++          "integrity": "sha1-fB0W1nmhu+WcoCys7PsBHiAfWh8="
++        },
++        "cliui": {
++          "version": "3.2.0",
++          "resolved": "https://registry.npmjs.org/cliui/-/cliui-3.2.0.tgz",
++          "integrity": "sha1-EgYBU3qRbSmUD5NNo7SNWFo5IT0=",
++          "requires": {
++            "string-width": "^1.0.1",
++            "strip-ansi": "^3.0.1",
++            "wrap-ansi": "^2.0.0"
++          }
++        },
++        "is-fullwidth-code-point": {
++          "version": "1.0.0",
++          "resolved": "https://registry.npmjs.org/is-fullwidth-code-point/-/is-fullwidth-code-point-1.0.0.tgz",
++          "integrity": "sha1-754xOG8DGn8NZDr4L95QxFfvAMs=",
++          "requires": {
++            "number-is-nan": "^1.0.0"
++          }
++        },
++        "os-locale": {
++          "version": "1.4.0",
++          "resolved": "https://registry.npmjs.org/os-locale/-/os-locale-1.4.0.tgz",
++          "integrity": "sha1-IPnxeuKe00XoveWDsT0gCYA8FNk=",
++          "requires": {
++            "lcid": "^1.0.0"
++          }
++        },
++        "string-width": {
++          "version": "1.0.2",
++          "resolved": "https://registry.npmjs.org/string-width/-/string-width-1.0.2.tgz",
++          "integrity": "sha1-EYvfW4zcUaKn5w0hHgfisLmxB9M=",
++          "requires": {
++            "code-point-at": "^1.0.0",
++            "is-fullwidth-code-point": "^1.0.0",
++            "strip-ansi": "^3.0.0"
++          }
++        },
++        "yargs": {
++          "version": "3.32.0",
++          "resolved": "https://registry.npmjs.org/yargs/-/yargs-3.32.0.tgz",
++          "integrity": "sha1-AwiOnr+edWtpdRYR0qXvWRSCyZU=",
++          "requires": {
++            "camelcase": "^2.0.1",
++            "cliui": "^3.0.3",
++            "decamelize": "^1.1.1",
++            "os-locale": "^1.4.0",
++            "string-width": "^1.0.1",
++            "window-size": "^0.1.4",
++            "y18n": "^3.2.0"
++          }
++        }
++      }
++    },
+     "proxy-addr": {
+       "version": "2.0.4",
+       "resolved": "https://registry.npmjs.org/proxy-addr/-/proxy-addr-2.0.4.tgz",
+@@ -16354,6 +17049,11 @@
+       "resolved": "https://registry.npmjs.org/which-module/-/which-module-2.0.0.tgz",
+       "integrity": "sha1-2e8H3Od7mQK4o6j6SzHD4/fm6Ho="
+     },
++    "window-size": {
++      "version": "0.1.4",
++      "resolved": "https://registry.npmjs.org/window-size/-/window-size-0.1.4.tgz",
++      "integrity": "sha1-+OGqHuWlPsW/FR/6CXQqatdpeHY="
++    },
+     "wordwrap": {
+       "version": "1.0.0",
+       "resolved": "https://registry.npmjs.org/wordwrap/-/wordwrap-1.0.0.tgz",
+@@ -16589,6 +17289,11 @@
+       "resolved": "https://registry.npmjs.org/xml-name-validator/-/xml-name-validator-3.0.0.tgz",
+       "integrity": "sha512-A5CUptxDsvxKJEU3yO6DuWBSJz/qizqzJKOMIfUJHETbBw/sFaDxgd6fxm1ewUaM0jZ444Fc5vC5ROYurg/4Pw=="
+     },
++    "xmlhttprequest": {
++      "version": "1.8.0",
++      "resolved": "https://registry.npmjs.org/xmlhttprequest/-/xmlhttprequest-1.8.0.tgz",
++      "integrity": "sha1-Z/4HXFwk/vOfnWX197f+dRcZaPw="
++    },
+     "xregexp": {
+       "version": "4.0.0",
+       "resolved": "https://registry.npmjs.org/xregexp/-/xregexp-4.0.0.tgz",
