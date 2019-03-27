@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { createUserWithEmailAndPassword } from "../firebase/firebase-auth";
+import { createUserandSignUp } from "../firebase/firebase-auth";
 
 const signup = () => {
 
@@ -12,8 +12,7 @@ const signup = () => {
     }
 
     const callSignup = (e) => {
-        console.log(userData)
-        createUserWithEmailAndPassword(userData.email, userData.password)
+        createUserandSignUp(userData)
         e.preventDefault()
 
     }
