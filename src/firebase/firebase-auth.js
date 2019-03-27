@@ -15,3 +15,13 @@ export const createUserandSignUp = user => {
     });
 }
 
+
+export const userSignIn = (email, password) => {
+    firebaseApp.auth().signInWithEmailAndPassword(email, password).then(() => {
+            console.log('successfully login')
+        }
+    ).catch(function(error) {
+        console.log(error.code, ': ', error.message)
+    });
+}
+
