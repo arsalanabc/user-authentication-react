@@ -1,10 +1,10 @@
 import React from 'react'
 
 const signup = () => {
-
+    const signup = () => {}
     return(
         <div>
-            <form>
+            <form className='form' onSubmit={signup}>
                 <h4> Please Sign Up</h4>
                 <label> First Name: </label>
                 <input type='text'/>
@@ -20,8 +20,8 @@ const signup = () => {
                 <br/>
                 <label> Confirm Password: </label>
                 <input type='password'/>
-
-
+                <br/>
+                <button type='submit'> Sign In</button>
             </form>
         </div>
     )

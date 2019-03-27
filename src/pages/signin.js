@@ -8,8 +8,8 @@ const signin = () => {
         <div className='signin-form'>
             <form onSubmit={authenticate}>
                 <h4>Please Sign In</h4>
-                <label>Email:</label>
-                <input value='text'/>
+                <label>Email: </label>
+                <input type='text'/>
                 <br/>
                 <label>Password:</label>
                 <input type='password'></input>
