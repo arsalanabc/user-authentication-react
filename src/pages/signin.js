@@ -9,12 +9,11 @@ const signin = (props) => {
 
     const authenticate = (e) => {
         e.preventDefault()
-        userSignIn(email, password)
-    }
+        userSignIn(email, password, ()=>{
+            props.setLoggedIn(true)
+            props.history.push('/home')
+        })
 
-    const fakelogin = () => {
-       props.setLoggedIn(true)
-        props.history.push('/home')
     }
 
     return(
@@ -30,7 +29,6 @@ const signin = (props) => {
                 <br/>
                 <button type='submit' onSubmit={authenticate}> Sign In</button>
             </form>
-            <button onClick={fakelogin}>test</button>
         </div>
     )
 }
