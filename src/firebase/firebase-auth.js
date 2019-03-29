@@ -17,7 +17,7 @@ export const createUserandSignUp = user => {
 
 export const userSignIn = (email, password, callback) => {
    return firebaseApp.auth().signInWithEmailAndPassword(email, password).then(
-       callback()
+       callback
     ).catch(function(error) {
         console.log(error.code, ': ', error.message)
     });
