@@ -39,8 +39,8 @@ const signup = () => {
                        value={userData.password}/>
                 <br/>
                 <label> Confirm Password: </label>
-                <input type='password' id="password" onChange={updateState}
-                       value={userData.password}/>
+                <input type='password' id="passwordConfirm" onChange={updateState}
+                       value={userData.passwordConfirm}/>
                 <br/>
                 <button type='submit'> Sign In</button>
             </form>

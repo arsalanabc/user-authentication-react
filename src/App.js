@@ -1,31 +1,47 @@
-import React, { Component } from 'react';
-import { HashRouter, NavLink, Route } from 'react-router-dom'
-import home from './pages/home'
-import signin from './pages/signin'
+import React, { useEffect, useState, Component } from 'react';
+import { Redirect, BrowserRouter, NavLink, Route, Switch } from 'react-router-dom'
+import Home from './pages/home'
+import Signin from './pages/signin'
 import signup from './pages/signup'
 import './App.css';
 
-class App extends Component {
-  render() {
+const App = () => {
+
+    const [isLoggedIn, setIsLoggedIn] = useState(false)
+    const Notfound = () => <h1>Not found</h1>
+
     return (
-          <HashRouter>
+        <BrowserRouter>
             <div className="App">
-              <h1> Single Page User Authentication Demo</h1>
+                <h1> Single Page User Authentication Demo</h1>
                 <div className='menu-bar'>
-                  <p> <NavLink exact to={'/home'} > Home </NavLink></p>
-                  <p> <NavLink to={'/signin'} > Sign In </NavLink></p>
-                  <p> <NavLink to={'/signup'} > Sign Up </NavLink></p>
+                    {isLoggedIn ?
+                        <p><NavLink to={'/home'}> Home </NavLink></p>
+                        :
+                        <>
+                        <p><NavLink to={'/signin'}> Sign In </NavLink></p>
+                        <p><NavLink to={'/signup'} > Sign Up </NavLink></p>
+                        </>
+                    }
                 </div>
             </div>
 
             <div className="content">
-              <Route path='/home' component={home} />
-              <Route path='/signin' component={signin} />
-              <Route path='/signup' component={signup} />
+                <Switch>
+                    <Route path='/signin' render={(props) =>
+                        <Signin setLoggedIn={setIsLoggedIn}
+                        isLoggedIn={isLoggedIn}
+                                {...props} />
+                    } />
+                    <Route path='/home' render={(props)=>
+                        <Home isLoggedIn={isLoggedIn} />} />
+                    <Route path='/signup' component={signup} />
+                    <Route render={Notfound}/>
+                </Switch>
             </div>
-          </HashRouter>
-    );
-  }
+        </BrowserRouter>
+    )
+
 }
 
-export default App;
+export default App
