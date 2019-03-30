@@ -66,3 +66,7 @@ div.menu-bar p a {
 .active {
     background-color: #0099ff;
 }
+
+.loginError {
+    color: red;
+}

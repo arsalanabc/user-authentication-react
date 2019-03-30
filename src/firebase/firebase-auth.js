@@ -11,15 +11,15 @@ export const createUserandSignUp = user => {
         }
     ).catch(function(error) {
             console.log(error.code, ': ', error.message)
-
     });
 }
 
-export const userSignIn = (email, password, callback) => {
+export const userSignIn = (email, password, callback, loginFailed) => {
    return firebaseApp.auth().signInWithEmailAndPassword(email, password).then(
        callback
     ).catch(function(error) {
         console.log(error.code, ': ', error.message)
+       loginFailed()
     });
 }
 
